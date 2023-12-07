@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<div class="container-nav">
+			<h1><img  class="logo" src="multimedia/logodifinitivo-removebg-preview.png"></h1>
+			<nav class="nav">
+				<ul class="nav-ul">
+					<li class="nav-li"><a href="index.html">Home</a></li>
+					<li class="nav-li"><a href="causas.html">causas</a></li>
+                    <li class="nav-li"><a href="poblacion.html">poblacion</a></li>
+                    <li class="nav-li"><a href="tipos.html">tipos</a></li>
+					<li class="nav-li"><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>       	
+	</header>
+    
+    <main class="formulario">
+		<h1>Red de apoyo</h1>
+        <form>
+			<label for="nombreyapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreyapellido" class="input-padron" required placeholder="Nombre y Apellido completo">
+
+			<label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+			
+
+			<label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX)XXX XXXX">
+
+			<label for="mensaje">Mensaje</label>
+			<textarea cols="70" rows="10"></textarea class="input-padron" required>
+
+			<fieldset> <!--fieldset se utiliza para formularios y agruparlos como el div-->																							
+				<legend>¿como le guataria que lo contactemos?</legend> <!--se utiliza para parrafos utilizando fieldset como la etiqueta p-->
+
+				<label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+				
+				<label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+
+				<label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>whatsApp</label>			
+			</fieldset>	
+
+			<fieldset>
+				<legend>¿En que horario prefiere ser atendido?</legend>
+				<select>
+					<option>Mañana</option>
+					<option>Tarde</option>
+					<option>Noche</option>
+				</select>
+			</fieldset>
+			
+			<label class="checkbox"><input type="checkbox" checked>¿le guataria recibir informacion sobre la discriminacion?</label>
+
+			<input type="submit" class="enviar">
+        </form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Dias</th>
+					<th>Horario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lunes</td>
+					<td>08h - 20h</td>
+				</tr>
+				<tr>
+					<td>Miercoles</td>
+					<td>08h - 20h</td>
+				</tr>
+				<tr>
+					<td>Viernes</td>
+					<td>08h - 20h</td>
+				</tr>
+			</tbody>
+		</table>
+    </main>
+
+    <footer>
+		<img class ="logofin" src="multimedia/logodifinitivo-removebg-preview.png" alt="logo">
+		<p class="copyright" >&copy copyright misterpajas.com - 2023</p>
+	</footer>
+
+</body>
+</html>
